@@ -1,0 +1,136 @@
+/* Custom Color Scheme */
+:root {
+  --primary-color: #3674B5; /* Deep Blue */
+  --secondary-color: #578FCA; /* Light Blue */
+  --accent-color: #A1E3F9; /* Sky Blue */
+  --background-color: #D1F8EF; /* Mint Green */
+}
+
+/* Fixed Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--primary-color) !important; /* Navbar background color */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: white !important; /* Navbar text color */
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent-color) !important; /* Hover color */
+}
+
+.navbar-toggler-icon {
+  background-color: white; /* Toggler icon color */
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-outline-secondary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+/* Search Button Styling */
+.navbar .btn-outline-success {
+  color: white; /* Text color */
+  border-color: white; /* Border color */
+  background-color: transparent; /* Transparent background */
+}
+
+.navbar .btn-outline-success:hover {
+  color: white; /* Text color on hover */
+  background-color: var(--primary-color); /* Background color on hover */
+  border-color: var(--primary-color); /* Border color on hover */
+}
+/* Hero Section Styling */
+.container.my-5 {
+  margin-top: 80px; /* Adjust margin to account for fixed navbar */
+  background-color: white; /* Light background for better contrast */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.display-4 {
+  color: var(--primary-color); /* Deep Blue for the heading */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.lead {
+  color: #4A4A4A; /* Dark gray for better readability */
+  font-size: 1.25rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-outline-secondary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Image Styling */
+.col-lg-4 img {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Match the container shadow */
+}
+
+/* Carousel Styling */
+.carousel-item img {
+  height: 400px; /* Adjust carousel image height */
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.carousel-indicators button {
+  background-color: var(--primary-color);
+}
+
+/* Footer or Additional Sections */
+/* Add more styles as needed for other sections */
